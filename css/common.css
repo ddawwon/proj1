@@ -26,6 +26,60 @@ button{outline:0}
 .sound_only{display: block;text-indent:-9999999999px;}
 
 /****************메인화면, 서브화면 공통영역 ************************************/
+#nav_pop{position: fixed;width: 100%;min-width: 1024px;/*더이상 작아지지않도록*/
+        height: 100%;overflow: auto;
+        
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#75c9ea+0,153d7b+100,29b8e5+100 */
+background: rgb(117,201,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(117,201,234,1) 0%, rgba(21,61,123,1) 100%, rgba(41,184,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(117,201,234,1) 0%,rgba(21,61,123,1) 100%,rgba(41,184,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(117,201,234,1) 0%,rgba(21,61,123,1) 100%,rgba(41,184,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75c9ea', endColorstr='#29b8e5',GradientType=0 ); /* IE6-9 */
+        z-index: 99999999999999;line-height: 30px; color: #ffffff;display: none;}
+      
+#nav_pop .navpop_inner{width: 1024px;margin: 0 auto;}
+#nav_pop #nav_iogo{position: relative;margin-bottom: 30px;margin-top: 30px;border-bottom: 1px solid #ffffff;}
+#nav_pop img{width: 181px;height: 55px;margin-bottom: 15px;}
+#nav_pop #nav_iogo .nav_close{position: absolute;top: 0;right: 0;}
+#nav_pop .depth1{text-align: center;}
+#nav_pop .depth1 > li{width: 25%; margin-bottom: 100px;float: right;}
+#nav_pop .depth1 > li > a{font-size: 1.3rem;margin-bottom: 20px;display: block;font-weight: bold;}
+/* #nav_pop .depth1 > li > a::after{content: '';display: block;width: 80px;margin-top: 10px;text-align: center; border-bottom: 1px solid #ffffff;} */
+#nav_pop .depth1 ul{}
+
+/*네비버튼 디자인*/
+.btn_all {width:30px;height:30px;position:absolute;
+         top:0px;right: 0;
+         z-index:100; }
+.btn_all span    
+{
+position: absolute;
+right: 0;
+height: 3px;
+background-color: #ffffff;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+width: 100%;
+border-radius: 2px;
+}
+.btn_all span:nth-child(1){
+      top:10px;
+      transform: rotate(45deg)
+  }
+.btn_all span:nth-child(2){
+      top:10px;
+      width:0
+  }
+.btn_all span:nth-child(3){
+      top: 10px;
+      transform: rotate(-45deg)
+  }
+
+
+
+
+
+
 .wrap{width: 100%;min-width: 1024px;overflow: hidden;}
 .inner{min-width:1024px;max-width:1280px;margin:0 auto;}
  #header .top_icon{float: right;
