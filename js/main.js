@@ -13,6 +13,14 @@ $(function(){
        }else { $('#quick_btn').fadeOut(200);}
     })
 
+    //퀵메뉴 탑버튼- 맨위로 올라감
+    $('#quick_btn').click(function(){
+        $('html, body').animate({
+            scrollTop :0
+        }, 550);
+        return false;
+    });
+
     //공지사항 자동넘어감
     //sec2
     var slide_box1;

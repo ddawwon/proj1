@@ -166,13 +166,13 @@ border-radius: 2px;
 #sec7 .regular .sta_txt h3{margin-top: 26px; margin-bottom: 20px;color: #000;font-size: 1rem;}
 #sec7 .regular .sta_txt p{margin-bottom: 30px;font-size: 0.937rem; line-height: 25px;color: #000000;}
 #sec7 .more_btn{width: 114px; height: 32px; border: none;border-radius: 40px;
-    color: #000;font-weight: bold; background-color: #cebe89;cursor: pointer;}
-#sec7 .more_btn:hover{background-color: #e7e1ce; color: #000000;}
+    color: #fff;font-weight: bold; background-color: #899fce;cursor: pointer;}
+#sec7 .more_btn:hover{background-color: #ced1e7; color: #000000;}
 
-.box1{width: 350px;height: 450px;}
-.box2{width: 350px;height: 450px;}
-.box3{width: 350px;height: 450px;}
-.box4{width: 350px;height: 450px;}
+.box1{width: 350px;height: 450px;transition: 0.8s;}
+.box2{width: 350px;height: 450px;transition: 0.8s;}
+.box3{width: 350px;height: 450px;transition: 0.8s;}
+.box4{width: 350px;height: 450px;transition: 0.8s;}
 
 #sec7 .box1:hover{transform: scale(1.1);}
 #sec7 .box2:hover{transform: scale(1.1);}
@@ -200,11 +200,12 @@ border-radius: 2px;
 
 
 /*********************quick_btn****************************/
-#quick_btn{width: 75px;height: 400px; position: fixed; z-index: 99999;
-           left:80px;top:40%;}
+#quick_btn{width: 75px;height: 400px; position: fixed;
+           left:80px;top:40%;z-index: 99999;}
 
 #quick_btn .quick_img{position: fixed;}
-#quick_btn .quick_img img{width:60px;height:60px;display: block;padding-left: 8px;padding-right: 8px;}
+#quick_btn .quick_img img{width:60px;height:60px;display: block;padding-left: 8px;
+    padding-right: 8px;cursor: pointer;}
 
 #quick_btn span{font-weight: bold;
                 font-size: 0.8rem;margin-bottom: 15px;margin-top: 8px; 
