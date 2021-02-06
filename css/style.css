@@ -7,9 +7,9 @@ h3{font-size: 0.937rem;display: inline-block;}
 #top_popup img{width: 100%; min-width: 1024px;} /*1024로 보호*/
 #top_popup .close{position: absolute; right: 50px; top:20px; text-indent: -99999999px;
                   background: none; border: 0; cursor: pointer;}
-#top_popup .close::before{content: '';display: block; width: 2px; height: 20px; background-color: #000000;
+#top_popup .close::before{content: '';display: block; width: 2px; height: 30px; background-color: #000000;
                           transform: rotate(45deg); position: absolute; top: 0px;}
-#top_popup .close::after{content: '';display: block; width: 2px; height: 20px; background-color: #000000;
+#top_popup .close::after{content: '';display: block; width: 2px; height: 30px; background-color: #000000;
                          transform: rotate(-45deg); position: absolute; top: 0px;}
 
 
@@ -23,7 +23,7 @@ h3{font-size: 0.937rem;display: inline-block;}
                           background-color: rgba(0,0,0,0.7);
                           /*width:calc((100% - 50px)/2)*/
                           position:absolute;
-                          bottom: 0;border-radius: 5px;
+                          bottom: 5px;border-radius: 16px;
                           text-align: center;
                           display: inline-block;overflow: hidden;}
 #sec2 .slide_box1{left: 0;}
@@ -96,9 +96,9 @@ border-radius: 2px;
 /*에니메이션 네모*/
 #sec3 .inner > div a{display: block;height: 400px;box-sizing: border-box;}
 #sec3 .inner > div a::before{content: '';
-                 display: block;width:0;height:0;
-                 position: absolute;left: 0;top: 0;
-                 border: 4px solid transparent;}
+                             display: block;width:0;height:0;
+                             position: absolute;left: 0;top: 0;
+                             border: 4px solid transparent;}
 #sec3 .inner > div:hover a::before{width:calc(100% - 8px);height: calc(100% - 8px);
                                 border-top-color: #153D7B; border-right-color: #153D7B;
                                 transition: width 0.4s, height 0.4s 0.4s;}
@@ -121,7 +121,7 @@ border-radius: 2px;
 
 #sec3 img{width: 68px;height: 68px; display: block;margin: 0 auto; margin-bottom: 27px;margin-top: 30px;}
 #sec3 span{display: block;text-align: center;margin-bottom: 27px;}
-#sec3 .title{font-weight:bold;font-size: 1.5rem; color: #000000;text-align: center; margin-top: 105px;}
+#sec3 .title{font-weight:bold;font-size: 1.5rem; color: #000000;text-align: center; margin-top: 84px;}
 
 /*********************section4****************************/
  
@@ -129,8 +129,9 @@ border-radius: 2px;
 #sec3 .inner >div {overflow:hidden;}
 #sec3 img { width:400px; position:relative; left:calc(50% - 200px) } (50% - 넓이절반값px) */
 
-#sec4 .intro1 img{width: 500px;left: calc(50% - 250px); position: relative;}
-#sec4 .intro2 img{width: 830px;left: calc(50% - 415px); position: relative;}
+#sec4 .intro1{width: 500px;border-radius: 5px;}
+#sec4 .intro1 img{width:100%;left: calc(50% - 250px); position: relative;border-radius: 5px;}
+#sec4 .intro2 img{width: 830px;left: calc(50% - 415px); position: relative;border-radius: 5px;}
 
 #sec4 .intro1 {width:32.5%; height: 320px; float: left; overflow: hidden; position: relative;}
 #sec4 .intro2 {width:calc(67.5% - 35px); height: 320px; float: right; overflow: hidden;}
@@ -140,7 +141,7 @@ border-radius: 2px;
 #sec5 h2,#sec5 h3{display: block;}
 #sec5 .sec5_title{width: 400px; float: left;margin-right: 35px;/*고정값*/
 }
-#sec5 .sec5_title img{width: 100%;margin-top: 110px;}
+#sec5 .sec5_title img{width: 100%;margin-top: 110px;border-radius: 5px;}
 
 #sec5 .sec5_cont{width: calc(100%  - 435px);
                  float: left; margin-top: 30px;}
@@ -149,17 +150,24 @@ border-radius: 2px;
 #sec5 button{position: absolute;}
 
 /*********************section6****************************/
-#sec6 button{left: calc(50% - 35px); top:-320px; background-color: transparent;border: none;position: relative;}
+#sec6{height: 724px;}
+#sec6 .vid_img{width: 100%;height: 544px; background-color: #1a1a1a;}
+#sec6 button{left: calc((100% - 70px)/2); top:-320px; background-color: transparent;
+    border: none;position: relative;transition: 0.8s;cursor: pointer;}
+#sec6 button:hover{transform: scale(1.2);}
 #sec6 button img{width: 70px;height: 70px;position: absolute;}
 
 /*********************section7****************************/
+#sec7{background-color: #f7f7f7;height: 800px;}
 #sec7 .regular{width: 100%;}
 #sec7 .regular img {width: 400px;margin: 0 auto;margin-top: 15px;}
-#sec7 .regular .sta_txt{width: 400px; height: 200px; background-color: #B9B7AD; text-align: center;margin: 0 auto;}
-#sec7 .regular .sta_txt h3{margin-top: 26px; margin-bottom: 20px;}
+#sec7 .regular .sta_txt{width: 400px; height: 200px; background-color: #fff; 
+    text-align: center;margin: 0 auto;}
+#sec7 .regular .sta_txt h3{margin-top: 26px; margin-bottom: 20px;color: #000;font-size: 1rem;}
 #sec7 .regular .sta_txt p{margin-bottom: 30px;font-size: 0.937rem; line-height: 25px;color: #000000;}
-#sec7 .more_btn{width: 114px; height: 32px; border: none;border-radius: 40px;color: #fff; background-color: #cccccc;}
-#sec7 .more_btn:hover{background-color: #DBCEA4; color: #000000;}
+#sec7 .more_btn{width: 114px; height: 32px; border: none;border-radius: 40px;
+    color: #000;font-weight: bold; background-color: #cebe89;cursor: pointer;}
+#sec7 .more_btn:hover{background-color: #e7e1ce; color: #000000;}
 
 .box1{width: 350px;height: 450px;}
 .box2{width: 350px;height: 450px;}
@@ -173,8 +181,7 @@ border-radius: 2px;
 
 
 /*********************footer****************************/
-#footer{margin-top: 110px;}
-#footer .footer_top{height: 64px;background-color: #f7f7f7;}
+#footer .footer_top{height: 64px;background-color: #fff;}
 
 #footer .footer_top span{font-size: 0.937rem;color: #000000;float: left; 
                           margin-right: 20px; margin-top: 25px;
@@ -182,11 +189,12 @@ border-radius: 2px;
 #footer .footer_top span:first-child{border-left: none;}    
 #footer .footer_top span:first-child{margin-left: 20px;}  
 #footer .footer_top img{width: 44px; height: 44px;margin-right: 20px;margin-top: 10px;float: right;}
-.footer_line{background-color: #f7f7f7;border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6; 
+.footer_line{background-color: #fff;border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6; 
             width: 100%;height: 64px;}
             
 .footer_bottom{height: 230px;margin-top: 40px;}
-.footer_bottom p{font-size:0.937rem;}
+.footer_bottom p{font-size:0.8rem;}
 .footer_bottom img{width: 180px; height: 55px;margin-bottom: 20px;}
 .footer_txt{margin-left: 20px;line-height: 25px;}
 
