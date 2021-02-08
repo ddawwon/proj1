@@ -152,11 +152,17 @@ border-radius: 2px;
 /*********************section6****************************/
 #sec6{height: 724px;}
 #sec6 .vid_img{width: 100%;height: 544px; background-color: #1a1a1a;}
-#sec6 button{left: calc((100% - 70px)/2); top:-320px; background-color: transparent;
-    border: none;position: relative;transition: 0.8s;cursor: pointer;}
-#sec6 button:hover{transform: scale(1.2);}
-#sec6 button img{width: 70px;height: 70px;position: absolute;}
 
+#sec6 .videobtn{left: calc((100% - 70px)/2); top:-320px; background-color: transparent;
+    border: none;position: relative;transition: 0.8s;cursor: pointer;}
+#sec6 .videobtn2{left: calc((100% - 70px)/2); top:-320px; background-color: transparent;
+        border: none;position: relative;transition: 0.8s;cursor: pointer;}
+#sec6 .videoimg img{width: 70px;height: 70px;position: absolute;}
+.videobtn2{                    
+    opacity: 0;
+    transition: opacity 0.5s
+    }
+.videobtn2:hover{opacity: 1;}
 /*********************section7****************************/
 #sec7{background-color: #f7f7f7;height: 800px;}
 #sec7 .regular{width: 100%;}
